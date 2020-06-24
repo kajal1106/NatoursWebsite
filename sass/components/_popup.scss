@@ -21,7 +21,7 @@
     }
  
     &__content{
-                @include absCenter;
+        @include absCenter;
         width: 75%;
         background-color: $color-white;
         box-shadow: 0 2rem 4rem rgba($color-black, .2);
@@ -43,7 +43,18 @@
         -moz-transition: all .4s .2s  ;
         -ms-transition: all .4s .2s  ;
         -o-transition: all .4s .2s  ;
-}
+
+
+        @include respond (tab-port){
+        width: 80%;
+        }
+
+        @include respond (phone){
+            width: 90%;
+            }
+
+
+       }
 
     &__left{
         width: 33.333333%;
@@ -75,6 +86,12 @@
         -webkit-hyphens:auto;
         -moz-hyphens:auto;
         -ms-hyphens:auto;
+
+        @include respond(phone){
+            -moz-column-count: 1;
+                 column-count: 1;
+                 
+        }
 }
 
 //open states

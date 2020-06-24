@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
 
         <link rel="stylesheet" href="css/icon-font.css">
@@ -20,13 +20,13 @@
                 <span class="navigation__icon">&nbsp;</span>
             </label>
             <div class="navigation__background">&nbsp;</div>
-            <nav class="navigation__nav">
+            <nav class="navigation__nav" id="navigation__nav">
                 <ul class="navigation__list">
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span> About Natours</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span> Your benefits</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span> Popular tours</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span> Stories</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span> Book Now</a></li>
+                    <li class="navigation__item"><a href="#section-about" class="navigation__link" onclick="closeNav()"><span>01</span> About Natours</a></li>
+                    <li class="navigation__item"><a href="#section-features" class="navigation__link" onclick="closeNav()"><span>02</span> Your benefits</a></li>
+                    <li class="navigation__item"><a href="#section-tours" class="navigation__link" onclick="closeNav()"><span>03</span> Popular tours</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link" onclick="closeNav()"><span>04</span> Stories</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link" onclick="closeNav()"><span>05</span> Book Now</a></li>
                 </ul>
             </nav>
         </div>
@@ -442,5 +442,10 @@
             </div>
         </section>
         -->
+        <script>
+            function closeNav() {
+              document.getElementById("navi-toggle").checked = false;
+            }
+          </script>
     </body>
 </html>
